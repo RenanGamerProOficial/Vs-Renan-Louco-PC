@@ -27,12 +27,12 @@ import Controls;
 
 using StringTools;
 
-class GameplaySettingsSubState extends BaseOptionsMenu
+class VsRenanLoucoSubState extends BaseOptionsMenu
 {
 	public function new()
 	{
-		title = 'Gameplay Settings';
-		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
+		title = 'Vs Renan Louco';
+		rpcTitle = 'Vs Renan Louco Menu'; //for Discord Rich Presence
 
 		var option:Option = new Option('Controller Mode',
 			'Check this if you want to play with\na controller instead of using your Keyboard.',
@@ -52,6 +52,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		var option:Option = new Option('Middlescroll',
 			'If checked, your notes get centered.',
 			'middleScroll',
+			'bool',
+			false);
+		addOption(option);
+
+                var option:Option = new Option('Hard Hell',
+			"Make the music harder",
+			'hardHell',
 			'bool',
 			false);
 		addOption(option);
